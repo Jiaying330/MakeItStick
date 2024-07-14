@@ -1,0 +1,14 @@
+What is CSS
+What is the meaning of ‘Cascading’ in Cascading Style Sheet?
+Explain Media Queries in CSS
+Describe the different types of CSS selectors. Provide examples of each.
+Explain the concept of the cascade in CSS. How does the order of CSS rules affect the styling of elements?
+Explain box-model in CSS
+What is the purpose of z-index property in CSS?
+Explain different ways to display an element at the center of the web page.
+Compare and contrast the content-box and border-box models. How do they affect the calculation of an element’s dimensions?
+How are padding and border included in the width and height calculations of an element in each box model?
+Describe the differences between static, relative, absolute, fixed, and sticky positioning in CSS. Provide examples of when each type would be used.
+What are pseudo classes and pseudo elements in CSS?
+Explain the main concepts of Flexbox and Grid layout systems in CSS. How do they differ in terms of use cases?
+What is the BEM methodology in CSS? How does it help in organizing and maintaining CSS code?

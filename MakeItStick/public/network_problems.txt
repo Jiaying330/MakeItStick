@@ -1,0 +1,6 @@
+Describe the process when user visit a website
+What is the purpose of a DNS request?
+What does TCP ensure during data transmission?
+What role does IP play in the TCP/IP protocol?
+What is the main difference between HTTP and HTTPS?
+Describe the process of an HTTP/HTTPS request and response.

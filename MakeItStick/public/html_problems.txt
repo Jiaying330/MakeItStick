@@ -1,0 +1,15 @@
+What is HTML?
+What is the basic structure of an HTML document?
+Explain the elements used in the basic structure of an HTML document.
+Differentiate between inline and block elements in HTML
+What is list in HTML? Explain different types of list available in HTML
+Explain tags in HTML
+What are Semantic elements in HTML?
+What are empty elements in HTML?
+Provide examples of semantic tags and describe their typical use cases.
+Why ‘alt’ attribute is used with the <img> tag in HTML?
+Why the <meta charset = “UTF-8”> tag is used?
+What is the purpose of using the ‘role’ attribute in HTML?
+Explain the steps involved in the critical rendering path, from HTML parsing to painting.
+What is the DOM tree, and how is it constructed during HTML parsing?
+Differentiate between the async and defer attributes of the <script> tag. How do they affect script loading and execution?
