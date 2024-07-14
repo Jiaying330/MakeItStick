@@ -1,0 +1,12 @@
+.select-button {
+  border: 2px solid aqua;
+  font-size: 1.4rem;
+  padding: 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s;
+
+  &.active {
+    background-color: aqua;
+  }
+}
