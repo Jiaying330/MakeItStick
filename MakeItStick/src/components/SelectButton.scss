@@ -6,7 +6,22 @@
   cursor: pointer;
   transition: all 0.1s;
 
-  &.active {
+  &:hover {
+    background-color: rgba(aqua, 0.3);
+  }
+  &.active,
+  &.active:hover {
     background-color: aqua;
+  }
+}
+#random {
+  border: 2px solid royalblue;
+  //   justify-self: flex-end;
+  &:hover {
+    background-color: rgba(royalblue, 0.3);
+  }
+  &.active,
+  &.active:hover {
+    background-color: royalblue;
   }
 }

@@ -1,0 +1,28 @@
+Explain what it means that JavaScript is an interpreted language. How does this affect the execution of JavaScript code?
+Describe how JavaScript uses prototypes for inheritance. 
+What are first-class functions in JavaScript? How does this feature affect the way functions can be used?
+Compare and contrast var, let, and const in terms of scope, hoisting, redeclaration, and reassignment.
+What are the rules for naming variables in JavaScript?
+List and describe the primitive data types in JavaScript. Provide examples of each.
+What are objects in JavaScript? Provide examples of different types of objects.
+Explain the use of the alert, prompt, and confirm functions. Provide examples of how each can be used.
+Describe null and undefined
+How does type conversion work in JavaScript? What are some common "falsy" values?
+Describe how the || (logical OR), && (logical AND), and ?? (nullish coalescing) operators work in JavaScript. Provide examples.
+Compare function declarations, function expressions, and arrow functions. Provide examples of each.
+What are the advantages and disadvantages of using arrow functions?
+What is the event loop in JavaScript? How does it handle asynchronous operations?
+Explain lexical scoping and the scope chain in JavaScript. Provide examples to illustrate how they work.
+What is hoisting in JavaScript? How does it affect the behavior of variables and functions?
+Describe how the this keyword works in different contexts: method calls, simple function calls, arrow functions, and event listeners. Provide examples.
+How do call, apply, and bind methods affect the value of this in JavaScript functions?
+What are some of the key features introduced in ES6 (ECMAScript 2015)? 
+Different ways to create objects in JS?
+Different ways to implement class in JS?
+How do classes in ES6 differ from traditional function-based object creation in JavaScript?
+What is a closure in JavaScript? How does it work, and why is it useful? Provide an example.
+How are objects and prototypes used in JavaScript to achieve inheritance? Provide an example.
+Explain the role of the constructor function and class syntax in ES6. How do they facilitate object creation and inheritance?
+Describe the concepts of encapsulation, abstraction, and polymorphism in the context of JavaScript. Provide examples of how each can be implemented.
+What are rest and spread operators in JavaScript? 
+Explain how to perform a deep copy of an object in JavaScript. 
