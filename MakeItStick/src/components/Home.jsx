@@ -5,6 +5,7 @@ import network_problems from "../problems/network_problems.txt";
 import html_problems from "../problems/html_problems.txt";
 import css_problems from "../problems/css_problems.txt";
 import js_1_problems from "../problems/js-1_problems.txt";
+import js_2_problems from "../problems/js-2_problems.txt";
 import Card from "./Card";
 import SelectButton from "./SelectButton";
 
@@ -14,8 +15,8 @@ export default function Home() {
   const [html, setHTML] = useState(false);
   const [css, setCSS] = useState(false);
   const [js1, setJS1] = useState(false);
+  const [js2, setJS2] = useState(false);
   const [random, setRandom] = useState(false);
-  const [indices, setIndices] = useState([]);
   const [currIndex, setCurrIndex] = useState(0);
   const [count, setCount] = useState(0);
 
@@ -34,50 +35,44 @@ export default function Home() {
     if (js1) {
       fetchProblems(js_1_problems, setQuestions, random);
     }
-  }, [network, html, css, js1, random]);
+    if (js2) {
+      fetchProblems(js_2_problems, setQuestions, random);
+    }
+  }, [network, html, css, js1, js2, random]);
 
+  function prevQuestionOnClick() {
+    if (count > 0) {
+      setCurrIndex((prev) => prev - 1);
+      setCount((prev) => prev - 1);
+    }
+  }
   function nextQuestionOnClick() {
     if (count < questions.length) {
-      // let index = random ? Math.floor(Math.random() * (questions.length - 1)) : currIndex;
       setCurrIndex((prev) => prev + 1);
-      // setCurrIndex(index);
       setCount((prev) => prev + 1);
     }
-    // const nextIndex = Math.floor(Math.random() * (questions.length - 1));
   }
 
   function reset() {
     setCount(0);
     setCurrIndex(0);
-    // setNetwork(false);
-    // setCSS(false);
-    // setHTML(false);
-    // setJS1(false);
   }
   function selectOnClick(event) {
     const id = event.target.id;
     reset();
     if (id == "network") {
-      // reset();
       setNetwork((prev) => !prev);
     } else if (id == "css") {
-      // reset();
       setCSS((prev) => !prev);
     } else if (id == "html") {
-      // reset();
       setHTML((prev) => !prev);
     } else if (id == "javascript-1") {
-      // reset();
       setJS1((prev) => !prev);
+    } else if (id == "javascript-2") {
+      setJS2((prev) => !prev);
     }
   }
   function randomOnClick() {
-    // const nextValue = !random;
-    // if (!nextValue) {
-
-    // } else {
-
-    // }
     setRandom((prev) => !prev);
   }
 
@@ -97,16 +92,27 @@ export default function Home() {
             active={js1}
             onClick={selectOnClick}
           />
+          <SelectButton
+            name="JavaScript-2"
+            active={js2}
+            onClick={selectOnClick}
+          />
           <SelectButton name="Random" active={random} onClick={randomOnClick} />
-          {/* <button className="main__button main__button-randomize">
-            Randomize
-          </button> */}
         </div>
         <div className="main__count">
           Problems Solved: {count} / {questions.length}
         </div>
         <Card question={questions[currIndex]} />
-        <button className="main__button" onClick={nextQuestionOnClick}>
+        <button
+          className="main__button main__button--1"
+          onClick={prevQuestionOnClick}
+        >
+          Previous Question
+        </button>
+        <button
+          className="main__button main__button--2"
+          onClick={nextQuestionOnClick}
+        >
           Next Question
         </button>
       </main>

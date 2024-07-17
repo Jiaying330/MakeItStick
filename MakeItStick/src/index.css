@@ -12,8 +12,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
 
-  --color-main: #ffeae3;
-  --color-button: #121481;
+  --color-main: #ffe9d0;
+  --color-card: #fffed3;
+  --color-button-1: #bbe9ff;
+  --color-button-2: #b1afff;
   --shadow-1: 0 1px 6rem rgba(black, 0.2);
 }
 
