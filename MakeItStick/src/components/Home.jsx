@@ -36,9 +36,8 @@ export default function Home() {
       setProblems(setQuestions, "javascript", random, allQuestions);
     }
     if (review) {
-      console.log(savedQuestions);
       const reviewQuestions = allQuestions.filter((q) =>
-        savedQuestions.includes(String(q.id))
+        savedQuestions.includes(q.id)
       );
       setQuestions((prev) => {
         return random
@@ -92,9 +91,7 @@ export default function Home() {
     return false;
   }
 
-  function saveQuestionOnClick(event) {
-    const id = event.target.id;
-    console.log(event.target);
+  function saveQuestionOnClick(id) {
     if (!checkSaved(id)) {
       setSavedQuestions((prev) => [...prev, id]);
     } else {
@@ -124,7 +121,7 @@ export default function Home() {
         <div className="main__count">
           Problems Solved: {count} / {questions.length}
         </div>
-        {questions.length > 0 && (
+        {questions.length > 0 && currIndex < questions.length && (
           <Card
             question={questions[currIndex]}
             checkSaved={checkSaved}

@@ -1,7 +1,24 @@
 .card {
-  padding: 3rem;
+  padding: 3rem 5rem;
   background-color: white;
   border-radius: 5px;
   font-size: 1.8rem;
   box-shadow: var(--shadow-1);
+  position: relative;
+  max-width: 55rem;
+
+  &__save-button {
+    position: absolute;
+    display: inline-block;
+    width: 4rem;
+    background-color: transparent;
+    border: none;
+    bottom: 1rem;
+    right: 1rem;
+
+    & > svg {
+      width: 100%;
+      cursor: pointer;
+    }
+  }
 }
