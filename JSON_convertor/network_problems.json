@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "problem": "Describe the process when user visit a website"
+    },
+    {
+        "id": 2,
+        "problem": "What is the purpose of a DNS request?"
+    },
+    {
+        "id": 3,
+        "problem": "What does TCP ensure during data transmission?"
+    },
+    {
+        "id": 4,
+        "problem": "What role does IP play in the TCP/IP protocol?"
+    },
+    {
+        "id": 5,
+        "problem": "What is the main difference between HTTP and HTTPS?"
+    },
+    {
+        "id": 6,
+        "problem": "Describe the process of an HTTP/HTTPS request and response."
+    }
+]

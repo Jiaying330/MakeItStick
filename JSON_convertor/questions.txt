@@ -1,0 +1,86 @@
+network
+Describe the process when user visit a website
+What is the purpose of a DNS request?
+What does TCP ensure during data transmission?
+What role does IP play in the TCP/IP protocol?
+What is the main difference between HTTP and HTTPS?
+Describe the process of an HTTP/HTTPS request and response.
+
+html
+What is HTML?
+What is the basic structure of an HTML document?
+Explain the elements used in the basic structure of an HTML document.
+Differentiate between inline and block elements in HTML
+What is list in HTML? Explain different types of list available in HTML
+Explain tags in HTML
+What are Semantic elements in HTML?
+What are empty elements in HTML?
+Provide examples of semantic tags and describe their typical use cases.
+Why ‘alt’ attribute is used with the <img> tag in HTML?
+Why the <meta charset = “UTF-8”> tag is used?
+What is the purpose of using the ‘role’ attribute in HTML?
+Explain the steps involved in the critical rendering path, from HTML parsing to painting.
+What is the DOM tree, and how is it constructed during HTML parsing?
+Differentiate between the async and defer attributes of the <script> tag. How do they affect script loading and execution?
+
+css
+What is CSS
+What is the meaning of ‘Cascading’ in Cascading Style Sheet?
+Explain Media Queries in CSS
+Describe the different types of CSS selectors. Provide examples of each.
+Explain the concept of the cascade in CSS. How does the order of CSS rules affect the styling of elements?
+Explain box-model in CSS
+What is the purpose of z-index property in CSS?
+Explain different ways to display an element at the center of the web page.
+Compare and contrast the content-box and border-box models. How do they affect the calculation of an element’s dimensions?
+How are padding and border included in the width and height calculations of an element in each box model?
+Describe the differences between static, relative, absolute, fixed, and sticky positioning in CSS. Provide examples of when each type would be used.
+What are pseudo classes and pseudo elements in CSS?
+Explain the main concepts of Flexbox and Grid layout systems in CSS. How do they differ in terms of use cases?
+What is the BEM methodology in CSS? How does it help in organizing and maintaining CSS code?
+
+javascript
+Explain what it means that JavaScript is an interpreted language. How does this affect the execution of JavaScript code?
+Describe how JavaScript uses prototypes for inheritance. Provide an example.
+What are first-class functions in JavaScript? How does this feature affect the way functions can be used?
+Compare and contrast var, let, and const in terms of scope, hoisting, redeclaration, and reassignment.
+What are the rules for naming variables in JavaScript?
+List and describe the primitive data types in JavaScript. Provide examples of each.
+What are objects in JavaScript? Provide examples of different types of objects.
+Explain the use of the alert, prompt, and confirm functions. Provide examples of how each can be used.
+Describe null and undefined
+How does type conversion work in JavaScript? What are some common "falsy" values?
+Describe how the || (logical OR), && (logical AND), and ?? (nullish coalescing) operators work in JavaScript. Provide examples.
+Compare function declarations, function expressions, and arrow functions. Provide examples of each.
+What are the advantages and disadvantages of using arrow functions?
+What is the event loop in JavaScript? How does it handle asynchronous operations?
+Explain lexical scoping and the scope chain in JavaScript. Provide examples to illustrate how they work.
+What is hoisting in JavaScript? How does it affect the behavior of variables and functions?
+Describe how the this keyword works in different contexts: method calls, simple function calls, arrow functions, and event listeners. Provide examples.
+How do call, apply, and bind methods affect the value of this in JavaScript functions?
+What are some of the key features introduced in ES6 (ECMAScript 2015)? 
+Different ways to create objects in JS?
+Different ways to implement class in JS?
+How do classes in ES6 differ from traditional function-based object creation in JavaScript?
+What is a closure in JavaScript? How does it work, and why is it useful? Provide an example.
+How are objects and prototypes used in JavaScript to achieve inheritance? Provide an example.
+Explain the role of the constructor function and class syntax in ES6. How do they facilitate object creation and inheritance?
+Describe the concepts of encapsulation, abstraction, and polymorphism in the context of JavaScript. Provide examples of how each can be implemented.
+What are rest parameters in JavaScript? Provide an example of how they are used.
+Explain how to perform a deep copy of an object in JavaScript. Provide examples using both custom functions and external libraries.
+Difference betweein __proto__, [[Prototype]], and prototype
+What is strict mode
+What are callback functions in JavaScript?
+What is callback hell and how to avoid it?
+Explain Promises in JavaScript.
+How do you handle promises
+How do then, catch, and finally methods work with Promises?
+What is the use of async await in JavaScript?
+Compare then with async await
+Explain Promise.all()
+Explain Promise.allSettled();
+What is the difference between instance methods and static methods?
+How does Javascript handle concurrency?
+What is async/await? How does it differ from using the promise instance methods?
+Can you use await outside of an async function?
+What is callback hell and why is it considered a problem?
