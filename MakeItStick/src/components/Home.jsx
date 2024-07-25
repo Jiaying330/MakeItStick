@@ -13,6 +13,7 @@ export default function Home() {
   const [css, setCSS] = useState(false);
   const [javascript, setJavascript] = useState(false);
   const [random, setRandom] = useState(false);
+  const [review, setReview] = useState(false);
   const [currIndex, setCurrIndex] = useState(0);
   const [count, setCount] = useState(0);
   const [savedQuestions, setSavedQuestions] = useLocalStorage(
@@ -34,7 +35,18 @@ export default function Home() {
     if (javascript) {
       setProblems(setQuestions, "javascript", random, allQuestions);
     }
-  }, [network, html, css, javascript, random]);
+    if (review) {
+      console.log(savedQuestions);
+      const reviewQuestions = allQuestions.filter((q) =>
+        savedQuestions.includes(String(q.id))
+      );
+      setQuestions((prev) => {
+        return random
+          ? shuffleArray([...prev, ...reviewQuestions])
+          : [...prev, ...reviewQuestions];
+      });
+    }
+  }, [network, html, css, javascript, random, review]);
 
   function prevQuestionOnClick() {
     if (count > 0) {
@@ -42,6 +54,7 @@ export default function Home() {
       setCount((prev) => prev - 1);
     }
   }
+
   function nextQuestionOnClick() {
     if (count < questions.length) {
       setCurrIndex((prev) => prev + 1);
@@ -65,8 +78,27 @@ export default function Home() {
       setHTML((prev) => !prev);
     } else if (id == "javascript") {
       setJavascript((prev) => !prev);
+    } else if (id == "review") {
+      setReview((prev) => !prev);
     } else if (id == "random") {
       setRandom((prev) => !prev);
+    }
+  }
+
+  function checkSaved(id) {
+    for (let saved of savedQuestions) {
+      if (saved == id) return true;
+    }
+    return false;
+  }
+
+  function saveQuestionOnClick(event) {
+    const id = event.target.id;
+    console.log(event.target);
+    if (!checkSaved(id)) {
+      setSavedQuestions((prev) => [...prev, id]);
+    } else {
+      setSavedQuestions((prev) => prev.filter((curr) => curr != id));
     }
   }
 
@@ -86,24 +118,33 @@ export default function Home() {
             active={javascript}
             onClick={selectOnClick}
           />
+          <SelectButton name="Review" active={review} onClick={selectOnClick} />
           <SelectButton name="Random" active={random} onClick={selectOnClick} />
         </div>
         <div className="main__count">
           Problems Solved: {count} / {questions.length}
         </div>
-        <Card question={questions[currIndex]} />
-        <button
-          className="main__button main__button--1"
-          onClick={prevQuestionOnClick}
-        >
-          Previous Question
-        </button>
-        <button
-          className="main__button main__button--2"
-          onClick={nextQuestionOnClick}
-        >
-          Next Question
-        </button>
+        {questions.length > 0 && (
+          <Card
+            question={questions[currIndex]}
+            checkSaved={checkSaved}
+            checkOnClick={saveQuestionOnClick}
+          />
+        )}
+        <div className="main__control-buttons">
+          <button
+            className="main__button main__button--1"
+            onClick={prevQuestionOnClick}
+          >
+            Previous Question
+          </button>
+          <button
+            className="main__button main__button--2"
+            onClick={nextQuestionOnClick}
+          >
+            Next Question
+          </button>
+        </div>
       </main>
     </>
   );
@@ -111,7 +152,6 @@ export default function Home() {
 
 function setProblems(setFunction, type, random, allQuestions) {
   let questions = allQuestions.filter((q) => q.type == type);
-  questions = questions.map((q) => q.problem);
   setFunction((prev) => {
     return random
       ? shuffleArray([...prev, ...questions])
