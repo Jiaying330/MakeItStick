@@ -6,23 +6,21 @@ import { useLocalStorage } from "../hooks/useLocalStorage";
 import { problems } from "../problems/problems";
 
 export default function Home() {
-  const [questions, setQuestions] = useState([]);
+  const [questions, setQuestions] = useLocalStorage("questions", []);
   const [allQuestions, setAllQuestions] = useState(problems);
-  const [network, setNetwork] = useState(false);
-  const [html, setHTML] = useState(false);
-  const [css, setCSS] = useState(false);
-  const [javascript, setJavascript] = useState(false);
-  const [random, setRandom] = useState(false);
-  const [review, setReview] = useState(false);
-  const [currIndex, setCurrIndex] = useState(0);
-  const [count, setCount] = useState(0);
+  const [network, setNetwork] = useLocalStorage("network", false);
+  const [html, setHTML] = useLocalStorage("html", false);
+  const [css, setCSS] = useLocalStorage("css", false);
+  const [javascript, setJavascript] = useLocalStorage("javascript", false);
+  const [random, setRandom] = useLocalStorage("random", false);
+  const [review, setReview] = useLocalStorage("review", false);
+  const [currIndex, setCurrIndex] = useLocalStorage("currIndex", 0);
   const [savedQuestions, setSavedQuestions] = useLocalStorage(
     "savedQuestions",
     []
   );
   useEffect(() => {
-    reset();
-    setQuestions([]);
+    if (questions.length) return;
     if (network) {
       setProblems(setQuestions, "network", random, allQuestions);
     }
@@ -48,22 +46,20 @@ export default function Home() {
   }, [network, html, css, javascript, random, review]);
 
   function prevQuestionOnClick() {
-    if (count > 0) {
+    if (currIndex > 0) {
       setCurrIndex((prev) => prev - 1);
-      setCount((prev) => prev - 1);
     }
   }
 
   function nextQuestionOnClick() {
-    if (count < questions.length) {
+    if (currIndex < questions.length - 1) {
       setCurrIndex((prev) => prev + 1);
-      setCount((prev) => prev + 1);
     }
   }
 
   function reset() {
-    setCount(0);
     setCurrIndex(0);
+    setQuestions([]);
   }
 
   function selectOnClick(event) {
@@ -119,7 +115,7 @@ export default function Home() {
           <SelectButton name="Random" active={random} onClick={selectOnClick} />
         </div>
         <div className="main__count">
-          Problems Solved: {count} / {questions.length}
+          Problem: {currIndex + 1} / {questions.length}
         </div>
         {questions.length > 0 && currIndex < questions.length && (
           <Card
