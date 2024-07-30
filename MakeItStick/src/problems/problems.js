@@ -1,4 +1,4 @@
-const problems = [
+export const problems = [
   {
     id: 1,
     problem: "Describe the process when user visit a website",
@@ -437,6 +437,146 @@ const problems = [
     problem: "What is callback hell and why is it considered a problem?",
     type: "javascript",
   },
+  {
+    id: 80,
+    problem: "What is TypeScript?",
+    type: "typescript",
+  },
+  {
+    id: 81,
+    problem: "Why TypeScript?",
+    type: "typescript",
+  },
+  {
+    id: 82,
+    problem: "What is any type? When to use it?",
+    type: "typescript",
+  },
+  {
+    id: 83,
+    problem: "What is void type? When to use it?",
+    type: "typescript",
+  },
+  {
+    id: 84,
+    problem: "What is unknown type? When to use it?",
+    type: "typescript",
+  },
+  {
+    id: 85,
+    problem: "What is never type? When to use it?",
+    type: "typescript",
+  },
+  {
+    id: 86,
+    problem: "Provide the syntax for a function with the type annotations",
+    type: "typescript",
+  },
+  {
+    id: 87,
+    problem: "Provide the syntax for an object with the type annotations",
+    type: "typescript",
+  },
+  {
+    id: 88,
+    problem: "How to specify optional properties in TypeScript?",
+    type: "typescript",
+  },
+  {
+    id: 89,
+    problem: "What is enum in TypeScript?",
+    type: "typescript",
+  },
+  {
+    id: 90,
+    problem: "What is tuple in TypeScript?",
+    type: "typescript",
+  },
+  {
+    id: 91,
+    problem: "What are type aliases in TypeScript? How do you create one?",
+    type: "typescript",
+  },
+  {
+    id: 92,
+    problem: "How do you do parameter destructuring?",
+    type: "typescript",
+  },
+  {
+    id: 93,
+    problem: "What are insertion types in TypeScript?",
+    type: "typescript",
+  },
+  {
+    id: 94,
+    problem: "What are union types in TypeScript?",
+    type: "typescript",
+  },
+  {
+    id: 95,
+    problem: "What are abstract classes? When should you use one?",
+    type: "typescript",
+  },
+  {
+    id: 96,
+    problem: "How to make object properties immutable in TypeScript?",
+    type: "typescript",
+  },
+  {
+    id: 97,
+    problem: "What is a type declaration file?",
+    type: "typescript",
+  },
+  {
+    id: 98,
+    problem: "Explain the purpose of the \u201cin\u201d operator",
+    type: "typescript",
+  },
+  {
+    id: 99,
+    problem: "What is an interface?",
+    type: "typescript",
+  },
+  {
+    id: 100,
+    problem: "What are the \u201cimplements\u201d clauses in TypeScript?",
+    type: "typescript",
+  },
+  {
+    id: 101,
+    problem: "What are string literal types?",
+    type: "typescript",
+  },
+  {
+    id: 102,
+    problem:
+      "What are utility types in TypeScript? List some and explain their usage",
+    type: "typescript",
+  },
+  {
+    id: 103,
+    problem:
+      "Explain the various ways to control member visibility in TypeScript",
+    type: "typescript",
+  },
+  {
+    id: 104,
+    problem: "What is type inference?",
+    type: "typescript",
+  },
+  {
+    id: 105,
+    problem: "What is contextual typing?",
+    type: "typescript",
+  },
+  {
+    id: 106,
+    problem: "What is Generic in TypeScript?",
+    type: "typescript",
+  },
+  {
+    id: 107,
+    problem: "What are type assertion in TypeScript?",
+    type: "typescript",
+  },
 ];
-
-export { problems };

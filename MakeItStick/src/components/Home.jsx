@@ -12,6 +12,7 @@ export default function Home() {
   const [html, setHTML] = useLocalStorage("html", false);
   const [css, setCSS] = useLocalStorage("css", false);
   const [javascript, setJavascript] = useLocalStorage("javascript", false);
+  const [typescript, setTypescript] = useLocalStorage("typescript", false);
   const [random, setRandom] = useLocalStorage("random", false);
   const [review, setReview] = useLocalStorage("review", false);
   const [currIndex, setCurrIndex] = useLocalStorage("currIndex", 0);
@@ -33,6 +34,9 @@ export default function Home() {
     if (javascript) {
       setProblems(setQuestions, "javascript", random, allQuestions);
     }
+    if (typescript) {
+      setProblems(setQuestions, "typescript", random, allQuestions);
+    }
     if (review) {
       const reviewQuestions = allQuestions.filter((q) =>
         savedQuestions.includes(q.id)
@@ -43,7 +47,7 @@ export default function Home() {
           : [...prev, ...reviewQuestions];
       });
     }
-  }, [network, html, css, javascript, random, review]);
+  }, [network, html, css, javascript, typescript, random, review]);
 
   function prevQuestionOnClick() {
     if (currIndex > 0) {
@@ -73,6 +77,8 @@ export default function Home() {
       setHTML((prev) => !prev);
     } else if (id == "javascript") {
       setJavascript((prev) => !prev);
+    } else if (id == "typescript") {
+      setTypescript((prev) => !prev);
     } else if (id == "review") {
       setReview((prev) => !prev);
     } else if (id == "random") {
@@ -109,6 +115,11 @@ export default function Home() {
           <SelectButton
             name="JavaScript"
             active={javascript}
+            onClick={selectOnClick}
+          />
+          <SelectButton
+            name="TypeScript"
+            active={typescript}
             onClick={selectOnClick}
           />
           <SelectButton name="Review" active={review} onClick={selectOnClick} />

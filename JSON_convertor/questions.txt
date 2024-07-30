@@ -84,3 +84,33 @@ How does Javascript handle concurrency?
 What is async/await? How does it differ from using the promise instance methods?
 Can you use await outside of an async function?
 What is callback hell and why is it considered a problem?
+
+typescript
+What is TypeScript?
+Why TypeScript?
+What is any type? When to use it?
+What is void type? When to use it?
+What is unknown type? When to use it?
+What is never type? When to use it?
+Provide the syntax for a function with the type annotations
+Provide the syntax for an object with the type annotations
+How to specify optional properties in TypeScript?
+What is enum in TypeScript?
+What is tuple in TypeScript?
+What are type aliases in TypeScript? How do you create one?
+How do you do parameter destructuring?
+What are insertion types in TypeScript?
+What are union types in TypeScript?
+What are abstract classes? When should you use one?
+How to make object properties immutable in TypeScript?
+What is a type declaration file?
+Explain the purpose of the “in” operator
+What is an interface?
+What are the “implements” clauses in TypeScript?
+What are string literal types?
+What are utility types in TypeScript? List some and explain their usage
+Explain the various ways to control member visibility in TypeScript
+What is type inference?
+What is contextual typing?
+What is Generic in TypeScript?
+What are type assertion in TypeScript?
