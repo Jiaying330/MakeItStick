@@ -504,7 +504,7 @@ export const problems = [
   },
   {
     id: 93,
-    problem: "What are insertion types in TypeScript?",
+    problem: "What are intersection types in TypeScript?",
     type: "typescript",
   },
   {

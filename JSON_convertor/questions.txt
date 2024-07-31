@@ -99,7 +99,7 @@ What is enum in TypeScript?
 What is tuple in TypeScript?
 What are type aliases in TypeScript? How do you create one?
 How do you do parameter destructuring?
-What are insertion types in TypeScript?
+What are intersection types in TypeScript?
 What are union types in TypeScript?
 What are abstract classes? When should you use one?
 How to make object properties immutable in TypeScript?
