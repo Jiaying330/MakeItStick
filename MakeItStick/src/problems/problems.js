@@ -579,4 +579,305 @@ export const problems = [
     problem: "What are type assertion in TypeScript?",
     type: "typescript",
   },
+  {
+    id: 108,
+    problem: "What is React?",
+    type: "react",
+  },
+  {
+    id: 109,
+    problem: "What is the history behind React evolution?",
+    type: "react",
+  },
+  {
+    id: 110,
+    problem: "What are the major features of React?",
+    type: "react",
+  },
+  {
+    id: 111,
+    problem: "What is JSX?",
+    type: "react",
+  },
+  {
+    id: 112,
+    problem: "What is the difference between Element and Component?",
+    type: "react",
+  },
+  {
+    id: 113,
+    problem: "How to create components in React?",
+    type: "react",
+  },
+  {
+    id: 114,
+    problem: "When to use a Class Component over a Function Component?",
+    type: "react",
+  },
+  {
+    id: 115,
+    problem: "What are Pure Components?",
+    type: "react",
+  },
+  {
+    id: 116,
+    problem: "What is state in React?",
+    type: "react",
+  },
+  {
+    id: 117,
+    problem: "What are props in React?",
+    type: "react",
+  },
+  {
+    id: 118,
+    problem: "What is the difference between state and props?",
+    type: "react",
+  },
+  {
+    id: 119,
+    problem: "What is the difference between HTML and React event handling?",
+    type: "react",
+  },
+  {
+    id: 120,
+    problem: "What are synthetic events in React?",
+    type: "react",
+  },
+  {
+    id: 121,
+    problem: "What are inline conditional expressions?",
+    type: "react",
+  },
+  {
+    id: 122,
+    problem:
+      'What is "key" prop and what is the benefit of using it in arrays of elements?',
+    type: "react",
+  },
+  {
+    id: 123,
+    problem: "What is Virtual DOM?",
+    type: "react",
+  },
+  {
+    id: 124,
+    problem: "How Virtual DOM works?",
+    type: "react",
+  },
+  {
+    id: 125,
+    problem: "What is the difference between Shadow DOM and Virtual DOM?",
+    type: "react",
+  },
+  {
+    id: 126,
+    problem: "What is React Fiber?",
+    type: "react",
+  },
+  {
+    id: 127,
+    problem: "What is the main goal of React Fiber?",
+    type: "react",
+  },
+  {
+    id: 128,
+    problem: "What are controlled components?",
+    type: "react",
+  },
+  {
+    id: 129,
+    problem: "What are uncontrolled components?",
+    type: "react",
+  },
+  {
+    id: 130,
+    problem: "What is the difference between createElement and cloneElement?",
+    type: "react",
+  },
+  {
+    id: 131,
+    problem: "What is Lifting State Up in React?",
+    type: "react",
+  },
+  {
+    id: 132,
+    problem: "What are Higher-Order components?",
+    type: "react",
+  },
+  {
+    id: 133,
+    problem: "What is children prop?",
+    type: "react",
+  },
+  {
+    id: 134,
+    problem: "How to write comments in React?",
+    type: "react",
+  },
+  {
+    id: 135,
+    problem: "What is reconciliation?",
+    type: "react",
+  },
+  {
+    id: 136,
+    problem: "Does the lazy function support named exports?",
+    type: "react",
+  },
+  {
+    id: 137,
+    problem: "Why React uses className over class attribute?",
+    type: "react",
+  },
+  {
+    id: 138,
+    problem: "What are fragments?",
+    type: "react",
+  },
+  {
+    id: 139,
+    problem: "Why fragments are better than container divs?",
+    type: "react",
+  },
+  {
+    id: 140,
+    problem: "What are portals in React?",
+    type: "react",
+  },
+  {
+    id: 141,
+    problem: "What are stateless components?",
+    type: "react",
+  },
+  {
+    id: 142,
+    problem: "What are stateful components?",
+    type: "react",
+  },
+  {
+    id: 143,
+    problem: "How to apply validation on props in React?",
+    type: "react",
+  },
+  {
+    id: 144,
+    problem: "What are the advantages of React?",
+    type: "react",
+  },
+  {
+    id: 145,
+    problem: "What are the limitations of React?",
+    type: "react",
+  },
+  {
+    id: 146,
+    problem: "What are the recommended ways for static type checking?",
+    type: "react",
+  },
+  {
+    id: 147,
+    problem: "What is the use of react-dom package?",
+    type: "react",
+  },
+  {
+    id: 148,
+    problem: "What is ReactDOMServer?",
+    type: "react",
+  },
+  {
+    id: 149,
+    problem: "How to use InnerHtml in React?",
+    type: "react",
+  },
+  {
+    id: 150,
+    problem: "How to use styles in React?",
+    type: "react",
+  },
+  {
+    id: 151,
+    problem: "How events are different in React?",
+    type: "react",
+  },
+  {
+    id: 152,
+    problem: "What is the impact of indexes as keys?",
+    type: "react",
+  },
+  {
+    id: 153,
+    problem: "How do you conditionally render components?",
+    type: "react",
+  },
+  {
+    id: 154,
+    problem: "Why we need to be careful when spreading props on DOM elements??",
+    type: "react",
+  },
+  {
+    id: 155,
+    problem: "How do you memoize a component?",
+    type: "react",
+  },
+  {
+    id: 156,
+    problem: "How you implement Server-Side Rendering or SSR?",
+    type: "react",
+  },
+  {
+    id: 157,
+    problem: "How to enable production mode in React?",
+    type: "react",
+  },
+  {
+    id: 158,
+    problem: "Do Hooks replace render props and higher order components?",
+    type: "react",
+  },
+  {
+    id: 159,
+    problem: "What is a switching component?",
+    type: "react",
+  },
+  {
+    id: 160,
+    problem: "What are React Mixins?",
+    type: "react",
+  },
+  {
+    id: 161,
+    problem: "What are the Pointer Events supported in React?",
+    type: "react",
+  },
+  {
+    id: 162,
+    problem: "Why should component names start with capital letter?",
+    type: "react",
+  },
+  {
+    id: 163,
+    problem: "Are custom DOM attributes supported in React v16?",
+    type: "react",
+  },
+  {
+    id: 164,
+    problem: "How to loop inside JSX?",
+    type: "react",
+  },
+  {
+    id: 165,
+    problem: "How do you access props in attribute quotes?",
+    type: "react",
+  },
+  {
+    id: 166,
+    problem: "What is React PropType array with shape?",
+    type: "react",
+  },
+  {
+    id: 167,
+    problem: "How to conditionally apply class attributes?",
+    type: "react",
+  },
 ];
