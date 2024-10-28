@@ -9,19 +9,18 @@ Describe the process of an HTTP/HTTPS request and response.
 html
 What is HTML?
 What is the basic structure of an HTML document?
-Explain the elements used in the basic structure of an HTML document.
 Differentiate between inline and block elements in HTML
-What is list in HTML? Explain different types of list available in HTML
-Explain tags in HTML
-What are Semantic elements in HTML?
-What are empty elements in HTML?
-Provide examples of semantic tags and describe their typical use cases.
-Why ‘alt’ attribute is used with the <img> tag in HTML?
-Why the <meta charset = “UTF-8”> tag is used?
-What is the purpose of using the ‘role’ attribute in HTML?
-Explain the steps involved in the critical rendering path, from HTML parsing to painting.
-What is the DOM tree, and how is it constructed during HTML parsing?
-Differentiate between the async and defer attributes of the <script> tag. How do they affect script loading and execution?
+What is DOCTYPE!
+What is semantic html?
+How do you use svg in html? SVG vs Canvas
+What is a meta tag?
+What are some HTML5 new features
+What is critical rendering path
+Web components
+Shadow DOM vs Real DOM vs Virtual DOM
+JSX vs HTML
+Image tag
+Object-fit
 
 css
 What is CSS
@@ -115,64 +114,82 @@ What is contextual typing?
 What is Generic in TypeScript?
 What are type assertion in TypeScript?
 
-react 
-What is React?
-What is the history behind React evolution?
-What are the major features of React?
+React
 What is JSX?
-What is the difference between Element and Component?
-How to create components in React?
-When to use a Class Component over a Function Component?
-What are Pure Components?
-What is state in React?
-What are props in React?
-What is the difference between state and props?
-What is the difference between HTML and React event handling?
-What are synthetic events in React?
-What are inline conditional expressions?
-What is "key" prop and what is the benefit of using it in arrays of elements?
-What is Virtual DOM?
-How Virtual DOM works?
-What is the difference between Shadow DOM and Virtual DOM?
-What is React Fiber?
-What is the main goal of React Fiber?
-What are controlled components?
-What are uncontrolled components?
-What is the difference between createElement and cloneElement?
-What is Lifting State Up in React?
-What are Higher-Order components?
-What is children prop?
-How to write comments in React?
+What is React virtual dom?
 What is reconciliation?
-Does the lazy function support named exports?
-Why React uses className over class attribute?
-What are fragments?
-Why fragments are better than container divs?
-What are portals in React?
-What are stateless components?
-What are stateful components?
-How to apply validation on props in React?
-What are the advantages of React?
-What are the limitations of React?
-What are the recommended ways for static type checking?
-What is the use of react-dom package?
-What is ReactDOMServer?
-How to use InnerHtml in React?
-How to use styles in React?
-How events are different in React?
-What is the impact of indexes as keys?
-How do you conditionally render components?
-Why we need to be careful when spreading props on DOM elements??
-How do you memoize a component?
-How you implement Server-Side Rendering or SSR?
-How to enable production mode in React?
-Do Hooks replace render props and higher order components?
-What is a switching component?
-What are React Mixins?
-What are the Pointer Events supported in React?
-Why should component names start with capital letter?
-Are custom DOM attributes supported in React v16?
-How to loop inside JSX?
-How do you access props in attribute quotes?
-What is React PropType array with shape?
-How to conditionally apply class attributes?
+What is a react element?
+What is a react component?
+What is the difference between state and props?
+What’s the difference between class and function components?
+How to trigger rerender in a component
+Why do you like react over other libraries and frameworks?
+What are higher order components?
+What are pure components?
+Advantage of using react hooks?
+What does the term mounted mean in react?
+What does useState do?
+What does useEffect do? What is a dependency array?
+What is useRef used for? How is it different from useState?
+What are synthetic events?
+Can you explain what is the role of reducers?
+What is react router? How is that different from conventional routing?
+How do you apply validation on props in react?
+Controlled component vs uncontrolled component difference?
+What is prop drilling?
+Any limitations that you have with react?
+
+React_Performance
+What does React.memo do? How do we use it?
+What is React.PureComponent
+How to prevent components from unnecessary rerendering?
+What is code splitting and lazy loading?
+What is server side rendering?
+Others: responsive images, remove unused css, prefetching
+
+Redux
+Why do we use redux?
+Difference between redux and useContext API?
+What is the store?
+What is a reducer?
+What is dispatch?
+What is the flux pattern?
+How do you use the state from redux? (class & func)
+What is redux middleware?
+
+
+Behavioral
+have you participated in initiation of a project (techstack, boilerplate, goal analysis, stakeholder)
+how do you manage restful api connection
+Do you prefer typescript or javascript, why?
+Are you a fan of unit test, tdd or bdd
+What state management tool do you prefer.
+What styling system did you use
+Do you have graphql experience
+How do you analyze performance of website, how to improve
+How do you review pull request, pair programming?
+Have you worked with developer from another team, why, how?
+how many ticket do you complete for each sprint?
+What’s your experience with TypeORM? What’s your thoughts about it?
+Who create user story
+how do you estimate story point?
+How do your team realize problem and improve performance
+Have you worked with developer from different timezone
+how do you realize and fix a production issue
+how do you measure the client side performance of a website
+what is your branching strategy
+how do you deploy your application, cicd?
+Are you familiar with SSO, JWT? how to you maintain login status on client side(cookie, localstorage, redux persist)
+How to cache data in react project
+Why did you leave your last job
+How do you get familiar with the code base quickly when you just joined the team
+Do you have a strong opinion of doing things, what would you do if there is another person like you, how do you confront them, how do you get things compromised
+How do you deal with ambiguity, such like when design is not done
+What’s the most frustrating part of being an engineer
+What are you looking for in a job
+What’re your favorite and least favorite technologies
+What’s your priority of shipping something out and making it perfect? Have you run into any situation that you need to go back and force with the design details
+Where do you like to spend your time? Front end/back end/database
+What backend experience do you have?
+What’s the most complicated front feature you built
+Do you have any questions: questions based on their introduction and questions they asked.

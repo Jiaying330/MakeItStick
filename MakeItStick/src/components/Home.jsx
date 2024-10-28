@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./Home.scss";
 import Card from "./Card";
 import SelectButton from "./SelectButton";
@@ -7,167 +7,119 @@ import { problems } from "../problems/problems";
 
 export default function Home() {
   const [questions, setQuestions] = useLocalStorage("questions", []);
-  const [allQuestions, setAllQuestions] = useState(problems);
-  const [network, setNetwork] = useLocalStorage("network", false);
-  const [html, setHTML] = useLocalStorage("html", false);
-  const [css, setCSS] = useLocalStorage("css", false);
-  const [javascript, setJavascript] = useLocalStorage("javascript", false);
-  const [typescript, setTypescript] = useLocalStorage("typescript", false);
-  const [react, setReact] = useLocalStorage("react", false);
-  const [random, setRandom] = useLocalStorage("random", false);
-  const [review, setReview] = useLocalStorage("review", false);
+  const [allQuestions] = useState(problems);
   const [currIndex, setCurrIndex] = useLocalStorage("currIndex", 0);
   const [savedQuestions, setSavedQuestions] = useLocalStorage(
     "savedQuestions",
     []
   );
+  const [filters, setFilters] = useLocalStorage("filters", {
+    network: false,
+    html: false,
+    css: false,
+    javascript: false,
+    typescript: false,
+    react: false,
+    // react_performance: false,
+    redux: false,
+    behavioral: false,
+    random: false,
+    review: false,
+  });
+
   useEffect(() => {
+    console.log(allQuestions);
     if (questions.length) return;
-    if (network) {
-      setProblems(setQuestions, "network", random, allQuestions);
-    }
-    if (html) {
-      setProblems(setQuestions, "html", random, allQuestions);
-    }
-    if (css) {
-      setProblems(setQuestions, "css", random, allQuestions);
-    }
-    if (javascript) {
-      setProblems(setQuestions, "javascript", random, allQuestions);
-    }
-    if (typescript) {
-      setProblems(setQuestions, "typescript", random, allQuestions);
-    }
-    if (react) {
-      setProblems(setQuestions, "react", random, allQuestions);
-    }
-    if (review) {
+
+    const problemTypes = Object.keys(filters).filter(
+      (type) => filters[type] && type !== "random" && type !== "review"
+    );
+
+    problemTypes.forEach((type) =>
+      setProblems(setQuestions, type, filters.random, allQuestions)
+    );
+
+    if (filters.review) {
       const reviewQuestions = allQuestions.filter((q) =>
         savedQuestions.includes(q.id)
       );
-      setQuestions((prev) => {
-        return random
+      setQuestions((prev) =>
+        filters.random
           ? shuffleArray([...prev, ...reviewQuestions])
-          : [...prev, ...reviewQuestions];
-      });
+          : [...prev, ...reviewQuestions]
+      );
     }
-  }, [network, html, css, javascript, typescript, react, random, review]);
+  }, [filters, questions.length]);
 
-  function prevQuestionOnClick() {
-    if (currIndex > 0) {
-      setCurrIndex((prev) => prev - 1);
-    }
+  function handlePrevClick() {
+    if (currIndex > 0) setCurrIndex(currIndex - 1);
   }
 
-  function nextQuestionOnClick() {
-    if (currIndex < questions.length - 1) {
-      setCurrIndex((prev) => prev + 1);
-    }
+  function handleNextClick() {
+    if (currIndex < questions.length - 1) setCurrIndex(currIndex + 1);
   }
 
-  function reset() {
+  function resetQuestions() {
     setCurrIndex(0);
     setQuestions([]);
   }
 
-  function selectOnClick(event) {
-    const id = event.target.id;
-    reset();
-    if (id == "network") {
-      setNetwork((prev) => !prev);
-    } else if (id == "css") {
-      setCSS((prev) => !prev);
-    } else if (id == "html") {
-      setHTML((prev) => !prev);
-    } else if (id == "javascript") {
-      setJavascript((prev) => !prev);
-    } else if (id == "typescript") {
-      setTypescript((prev) => !prev);
-    } else if (id == "react") {
-      setReact((prev) => !prev);
-    } else if (id == "review") {
-      setReview((prev) => !prev);
-    } else if (id == "random") {
-      setRandom((prev) => !prev);
-    }
+  function toggleFilter(type) {
+    resetQuestions();
+    setFilters((prev) => ({ ...prev, [type]: !prev[type] }));
   }
 
-  function checkSaved(id) {
-    for (let saved of savedQuestions) {
-      if (saved == id) return true;
-    }
-    return false;
-  }
-
-  function saveQuestionOnClick(id) {
-    if (!checkSaved(id)) {
-      setSavedQuestions((prev) => [...prev, id]);
-    } else {
-      setSavedQuestions((prev) => prev.filter((curr) => curr != id));
-    }
+  function toggleSaveQuestion(id) {
+    setSavedQuestions((prev) =>
+      prev.includes(id) ? prev.filter((curr) => curr !== id) : [...prev, id]
+    );
   }
 
   return (
-    <>
-      <main className="main">
-        <div className="main__select-buttons">
+    <main className="main">
+      <div className="main__select-buttons">
+        {Object.keys(filters).map((type) => (
           <SelectButton
-            name="Network"
-            active={network}
-            onClick={selectOnClick}
+            key={type}
+            name={type}
+            active={filters[type]}
+            onClick={() => toggleFilter(type)}
           />
-          <SelectButton name="HTML" active={html} onClick={selectOnClick} />
-          <SelectButton name="CSS" active={css} onClick={selectOnClick} />
-          <SelectButton
-            name="JavaScript"
-            active={javascript}
-            onClick={selectOnClick}
-          />
-          <SelectButton
-            name="TypeScript"
-            active={typescript}
-            onClick={selectOnClick}
-          />
-          <SelectButton name="React" active={react} onClick={selectOnClick} />
-          <SelectButton name="Review" active={review} onClick={selectOnClick} />
-          <SelectButton name="Random" active={random} onClick={selectOnClick} />
-        </div>
-        <div className="main__count">
-          Problem: {currIndex + 1} / {questions.length}
-        </div>
-        {questions.length > 0 && currIndex < questions.length && (
-          <Card
-            question={questions[currIndex]}
-            checkSaved={checkSaved}
-            checkOnClick={saveQuestionOnClick}
-          />
-        )}
-        <div className="main__control-buttons">
-          <button
-            className="main__button main__button--1"
-            onClick={prevQuestionOnClick}
-          >
-            Previous Question
-          </button>
-          <button
-            className="main__button main__button--2"
-            onClick={nextQuestionOnClick}
-          >
-            Next Question
-          </button>
-        </div>
-      </main>
-    </>
+        ))}
+      </div>
+      <div className="main__count">
+        Problem: {currIndex + 1} / {questions.length}
+      </div>
+      {questions.length > 0 && currIndex < questions.length && (
+        <Card
+          question={questions[currIndex]}
+          checkSaved={(id) => savedQuestions.includes(id)}
+          checkOnClick={toggleSaveQuestion}
+        />
+      )}
+      <div className="main__control-buttons">
+        <button
+          className="main__button main__button--1"
+          onClick={handlePrevClick}
+        >
+          Previous Question
+        </button>
+        <button
+          className="main__button main__button--2"
+          onClick={handleNextClick}
+        >
+          Next Question
+        </button>
+      </div>
+    </main>
   );
 }
 
 function setProblems(setFunction, type, random, allQuestions) {
-  let questions = allQuestions.filter((q) => q.type == type);
-  setFunction((prev) => {
-    return random
-      ? shuffleArray([...prev, ...questions])
-      : [...prev, ...questions];
-  });
+  const questions = allQuestions.filter((q) => q.type === type);
+  setFunction((prev) =>
+    random ? shuffleArray([...prev, ...questions]) : [...prev, ...questions]
+  );
 }
 
 function shuffleArray(array) {
