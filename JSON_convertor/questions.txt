@@ -5,6 +5,11 @@ What does TCP ensure during data transmission?
 What role does IP play in the TCP/IP protocol?
 What is the main difference between HTTP and HTTPS?
 Describe the process of an HTTP/HTTPS request and response.
+What are HTTP methods?
+What are RESTful API design principles?
+local storage vs session storage vs cookies
+Status code
+
 
 html
 What is HTML?
@@ -138,14 +143,11 @@ How do you apply validation on props in react?
 Controlled component vs uncontrolled component difference?
 What is prop drilling?
 Any limitations that you have with react?
-
-React_Performance
 What does React.memo do? How do we use it?
 What is React.PureComponent
 How to prevent components from unnecessary rerendering?
 What is code splitting and lazy loading?
 What is server side rendering?
-Others: responsive images, remove unused css, prefetching
 
 Redux
 Why do we use redux?
@@ -192,4 +194,7 @@ What’s your priority of shipping something out and making it perfect? Have you
 Where do you like to spend your time? Front end/back end/database
 What backend experience do you have?
 What’s the most complicated front feature you built
-Do you have any questions: questions based on their introduction and questions they asked.
+Benefits of using SASS?
+How to make sure your app is cross browser compatible?
+How to make sure your app is accessible?
+How do you make your page responsive?
