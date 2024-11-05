@@ -552,366 +552,366 @@
     {
         "id": 111,
         "problem": "What is JSX?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 112,
         "problem": "What is React virtual dom?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 113,
         "problem": "What is reconciliation?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 114,
         "problem": "What is a react element?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 115,
         "problem": "What is a react component?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 116,
         "problem": "What is the difference between state and props?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 117,
         "problem": "What\u2019s the difference between class and function components?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 118,
         "problem": "How to trigger rerender in a component",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 119,
         "problem": "Why do you like react over other libraries and frameworks?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 120,
         "problem": "What are higher order components?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 121,
         "problem": "What are pure components?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 122,
         "problem": "Advantage of using react hooks?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 123,
         "problem": "What does the term mounted mean in react?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 124,
         "problem": "What does useState do?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 125,
         "problem": "What does useEffect do? What is a dependency array?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 126,
         "problem": "What is useRef used for? How is it different from useState?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 127,
         "problem": "What are synthetic events?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 128,
         "problem": "Can you explain what is the role of reducers?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 129,
         "problem": "What is react router? How is that different from conventional routing?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 130,
         "problem": "How do you apply validation on props in react?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 131,
         "problem": "Controlled component vs uncontrolled component difference?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 132,
         "problem": "What is prop drilling?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 133,
         "problem": "Any limitations that you have with react?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 134,
         "problem": "What does React.memo do? How do we use it?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 135,
         "problem": "What is React.PureComponent",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 136,
         "problem": "How to prevent components from unnecessary rerendering?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 137,
         "problem": "What is code splitting and lazy loading?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 138,
         "problem": "What is server side rendering?",
-        "type": "React"
+        "type": "react"
     },
     {
         "id": 139,
         "problem": "Why do we use redux?",
-        "type": "Redux"
+        "type": "redux"
     },
     {
         "id": 140,
         "problem": "Difference between redux and useContext API?",
-        "type": "Redux"
+        "type": "redux"
     },
     {
         "id": 141,
         "problem": "What is the store?",
-        "type": "Redux"
+        "type": "redux"
     },
     {
         "id": 142,
         "problem": "What is a reducer?",
-        "type": "Redux"
+        "type": "redux"
     },
     {
         "id": 143,
         "problem": "What is dispatch?",
-        "type": "Redux"
+        "type": "redux"
     },
     {
         "id": 144,
         "problem": "What is the flux pattern?",
-        "type": "Redux"
+        "type": "redux"
     },
     {
         "id": 145,
         "problem": "How do you use the state from redux? (class & func)",
-        "type": "Redux"
+        "type": "redux"
     },
     {
         "id": 146,
         "problem": "What is redux middleware?",
-        "type": "Redux"
+        "type": "redux"
     },
     {
         "id": 147,
         "problem": "have you participated in initiation of a project (techstack, boilerplate, goal analysis, stakeholder)",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 148,
         "problem": "how do you manage restful api connection",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 149,
         "problem": "Do you prefer typescript or javascript, why?",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 150,
         "problem": "Are you a fan of unit test, tdd or bdd",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 151,
         "problem": "What state management tool do you prefer.",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 152,
         "problem": "What styling system did you use",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 153,
         "problem": "Do you have graphql experience",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 154,
         "problem": "How do you analyze performance of website, how to improve",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 155,
         "problem": "How do you review pull request, pair programming?",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 156,
         "problem": "Have you worked with developer from another team, why, how?",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 157,
         "problem": "how many ticket do you complete for each sprint?",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 158,
         "problem": "What\u2019s your experience with TypeORM? What\u2019s your thoughts about it?",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 159,
         "problem": "Who create user story",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 160,
         "problem": "how do you estimate story point?",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 161,
         "problem": "How do your team realize problem and improve performance",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 162,
         "problem": "Have you worked with developer from different timezone",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 163,
         "problem": "how do you realize and fix a production issue",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 164,
         "problem": "how do you measure the client side performance of a website",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 165,
         "problem": "what is your branching strategy",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 166,
         "problem": "how do you deploy your application, cicd?",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 167,
         "problem": "Are you familiar with SSO, JWT? how to you maintain login status on client side(cookie, localstorage, redux persist)",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 168,
         "problem": "How to cache data in react project",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 169,
         "problem": "Why did you leave your last job",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 170,
         "problem": "How do you get familiar with the code base quickly when you just joined the team",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 171,
         "problem": "Do you have a strong opinion of doing things, what would you do if there is another person like you, how do you confront them, how do you get things compromised",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 172,
         "problem": "How do you deal with ambiguity, such like when design is not done",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 173,
         "problem": "What\u2019s the most frustrating part of being an engineer",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 174,
         "problem": "What are you looking for in a job",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 175,
         "problem": "What\u2019re your favorite and least favorite technologies",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 176,
         "problem": "What\u2019s your priority of shipping something out and making it perfect? Have you run into any situation that you need to go back and force with the design details",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 177,
         "problem": "Where do you like to spend your time? Front end/back end/database",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 178,
         "problem": "What backend experience do you have?",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 179,
         "problem": "What\u2019s the most complicated front feature you built",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 180,
         "problem": "Benefits of using SASS?",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 181,
         "problem": "How to make sure your app is cross browser compatible?",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 182,
         "problem": "How to make sure your app is accessible?",
-        "type": "Behavioral"
+        "type": "behavioral"
     },
     {
         "id": 183,
         "problem": "How do you make your page responsive?",
-        "type": "Behavioral"
+        "type": "behavioral"
     }
 ]

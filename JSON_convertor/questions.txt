@@ -119,7 +119,7 @@ What is contextual typing?
 What is Generic in TypeScript?
 What are type assertion in TypeScript?
 
-React
+react
 What is JSX?
 What is React virtual dom?
 What is reconciliation?
@@ -149,7 +149,7 @@ How to prevent components from unnecessary rerendering?
 What is code splitting and lazy loading?
 What is server side rendering?
 
-Redux
+redux
 Why do we use redux?
 Difference between redux and useContext API?
 What is the store?
@@ -160,7 +160,7 @@ How do you use the state from redux? (class & func)
 What is redux middleware?
 
 
-Behavioral
+behavioral
 have you participated in initiation of a project (techstack, boilerplate, goal analysis, stakeholder)
 how do you manage restful api connection
 Do you prefer typescript or javascript, why?
